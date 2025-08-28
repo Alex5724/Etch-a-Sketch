@@ -1,0 +1,48 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 40vw;
+    height: 50vh;
+    overflow: hidden;
+}
+.element{
+    border: 1px solid red; 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#size{
+    width: 10%;
+    height: 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 70, 255);
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "ROBOTO", sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+#size:hover{
+    background-color: rgb(0, 90, 255);
+}
+#size:active{
+    background-color: rgb(0, 110, 255);
+}
