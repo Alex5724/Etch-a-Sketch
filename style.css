@@ -5,8 +5,10 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+   background: linear-gradient(to right, #00c6ff, #0072ff, #00ffb3);
 }
 #container{
     display: flex;
@@ -16,19 +18,19 @@ body{
     padding: 0;
     border: 3px solid black;
     border-radius: 5px;
-    width: 40vw;
-    height: 50vh;
+    width: 50vw;
+    height: 60vh;
     overflow: hidden;
 }
 .element{
-    border: 1px solid red; 
+    border: 1px solid black; 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-#size{
-    width: 10%;
-    height: 5%;
+#size, #clear{
+    width: 150px;
+    height: 30px;
     border: none;
     border-radius: 5px;
     background-color: rgb(0, 70, 255);
@@ -40,9 +42,26 @@ body{
     padding: 0;
     cursor: pointer;
 }
-#size:hover{
+#size:hover, #clear:hover{
     background-color: rgb(0, 90, 255);
 }
-#size:active{
-    background-color: rgb(0, 110, 255);
+.element:hover{
+    background-color: rgb(145, 242, 255);
+}
+#buttons{
+    display: flex;
+    margin-top: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    justify-content: space-between;
+    width: 50vw;
+    height: auto;
+    align-items: center;
+}
+h1{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "ROBOTO", sans-serif;
+    margin: 0;
 }
